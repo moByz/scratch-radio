@@ -109,8 +109,8 @@ $imagesPath: '../../assets';
   &__figure {
     align-items: stretch;
     justify-content: stretch;
-    max-width: 130px;
-    min-width: 130px;
+    max-width: 100px;
+    min-width: 100px;
     position: relative;
     transition: all 0.3s cubic-bezier(0.39, 0.58, 0.57, 1);
     @include breakpoint(sm) {
@@ -179,7 +179,7 @@ $imagesPath: '../../assets';
     justify-content: flex-end;
     margin-bottom: 5px;
     padding-top: 0px;
-    min-height: 20px;
+    min-height: 22px;
     @include breakpoint(sm) {
       position: absolute;
       right: 33px;
