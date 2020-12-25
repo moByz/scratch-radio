@@ -15,7 +15,7 @@ $imagesPath: '../../assets';
   border-radius: 4px;
   cursor: pointer;
   margin-bottom: 10px;
-  min-height: 110px;
+  min-height: 168px;
   padding: 15px 15px 26px;
   position: relative;
   transition: all 0.3s cubic-bezier(0.39, 0.58, 0.57, 1);
@@ -97,7 +97,7 @@ $imagesPath: '../../assets';
     display: block;
     font-size: 10px;
     transition: all 0.3s cubic-bezier(0.39, 0.58, 0.57, 1);
-    word-break: break-all;
+    word-break: break-word;
     @include breakpoint(sm) {
       font-size: 15px;
     }

@@ -7,7 +7,7 @@ export const API_WSS = 'wss://admin.scratch.radio/api/live/nowplaying/';
 //= ====================================
 //  ERRORS
 //-------------------------------------
-export const CONNECT_ERROR = 'Unable to connect to the server. Please reload this page.';
+export const CONNECT_ERROR = 'Connecting...';
 
 //= ====================================
 //  HOSTS
