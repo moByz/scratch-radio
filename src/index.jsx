@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { Router } from 'react-router-dom';
+import { createMemoryHistory } from 'history';
 import { Provider } from 'react-redux';
 
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
@@ -12,14 +13,15 @@ import App from './App';
 import { Update } from './components';
 import store from './redux/store';
 
+const history = createMemoryHistory();
 const renderMethod = module.hot ? ReactDOM.render : ReactDOM.hydrate;
 
 renderMethod(
-  <BrowserRouter>
+  <Router history={history}>
     <Provider store={store}>
       <App />
     </Provider>
-  </BrowserRouter>,
+  </Router>,
   document.getElementById('root'),
 );
 
